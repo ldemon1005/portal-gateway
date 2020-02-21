@@ -35,7 +35,11 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    before: require('./mock/mock-server.js')
+    before: require('./mock/mock-server.js'),
+    allowedHosts: [
+      'https://portal-gateway-cmc.herokuapp.com/',
+    ]
+  }
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
